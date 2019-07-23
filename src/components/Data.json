@@ -1,0 +1,32 @@
+[
+    {
+            "id" : 1,
+            "name": "Nguyen Van A",
+            "phone": "0982365213",
+            "permisson":1
+    },
+    {
+        "id" : 2,
+        "name": "Nguyen Van C",
+        "phone": "0982365213",
+        "permisson":2
+    },
+    {
+        "id" : 3,
+        "name": "Nguyen Van D",
+        "phone": "0982365213",
+        "permisson":3
+    },  
+    {
+        "id" : 4,
+        "name": "Nguyen Van E",
+        "phone": "0982365213",
+        "permisson":1
+    },
+    {
+        "id" : 5,
+        "name": "Nguyen Van F",
+        "phone": "0982365213",
+        "permisson":2
+    }
+]
