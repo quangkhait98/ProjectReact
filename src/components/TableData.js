@@ -3,7 +3,11 @@ import TableDataRow from './TableDataRow';
 
 export default class TableData extends Component {
 
-  mapDataUser = ()=> this.props.datauser.map((value,key)=>( <TableDataRow data={value} key={key} stt={key}/>))
+  deleteButtonClick = (idUser) => {
+    this.props.deleteUser(idUser);
+}
+  mapDataUser = ()=> this.props.datauser.map((value,key)=>( <TableDataRow data={value} key={key} stt={key}
+    deleteButtonClick = {(idUser) => this.deleteButtonClick(idUser)}/>))
   
   render() {
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class TableDataRow extends Component {
+ class TableDataRow extends Component {
 
     showPermisson = () => {
         if (this.props.data.permisson === 1) {
@@ -11,6 +11,9 @@ export default class TableDataRow extends Component {
             return "Member";
         }
     }
+    deleteButtonClick = (idUser) => {
+        this.props.deleteButtonClick(idUser);
+   }
     render() {
         return (
 
@@ -20,10 +23,12 @@ export default class TableDataRow extends Component {
                 <td>{this.props.data.phone}</td>
                 <td>{this.showPermisson()}</td>
                 <td>
-                    <div className="btn btn-warning sua"><i className="fa fa-edit">edit</i></div>
-                    <div className="btn btn-danger sua"><i className="fa fa-edit">delete</i></div>
+                    
+                    <div className="btn btn-danger " onClick={(idUser) => this.deleteButtonClick(this.props.data.id)}><i className="fa fa-edit">delete</i></div>
                 </td>
             </tr>
         )
     }
 }
+
+export default  (TableDataRow);

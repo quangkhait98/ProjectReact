@@ -16,8 +16,6 @@ export default class AddData extends Component {
   isChange= (event)=>{
     const name = event.target.name;
     const value = event.target.value;
-   console.log(name);
-   console.log(value);
    this.setState({
      [name]: value
    })
